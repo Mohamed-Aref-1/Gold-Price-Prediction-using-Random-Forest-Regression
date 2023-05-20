@@ -15,28 +15,28 @@ seaborn for data visualization
 ##Data Collection
 The gold price data is collected from Kaggle and loaded into a Pandas DataFrame using the pd.read_csv() function.
 
-##Data Exploration
+## Data Exploration
 Overview
 The dataset is explored to gain insights into its structure and content. The first 5 rows of the DataFrame are displayed using the head() function, while the last 5 rows are displayed using the tail() function. The shape of the DataFrame is obtained using the shape attribute, and information about the DataFrame is displayed using the info() method. Missing values in the DataFrame are checked using the isnull().sum() method, and descriptive statistics are calculated using the describe() method.
 
-##Correlation Analysis
+## Correlation Analysis
 The correlation between features is analyzed using a correlation matrix. The correlation matrix is computed using the corr() method, and a heatmap is created using sns.heatmap() to visualize the correlations. The correlation values for the target variable (GLD) are printed using the print() function.
 
-##Data Distribution
+## Data Distribution
 The distribution of the target variable (GLD) is visualized using a histogram plot created with sns.distplot().
 
-##Data Preprocessing
+## Data Preprocessing
 Splitting Features and Target
 The features and target variable are separated. The features are obtained by dropping the 'Date' and 'GLD' columns from the DataFrame using the drop() method, while the target variable is extracted using indexing.
 
-##Splitting into Training and Test Data
+## Splitting into Training and Test Data
 The dataset is split into training and test sets using the train_test_split() function from the sklearn.model_selection module. The features and target variables are passed as input, along with the desired test size and random state.
 
-##Model Training
+## Model Training
 Random Forest Regression
 A Random Forest Regression model is created using the RandomForestRegressor() class from the sklearn.ensemble module. The number of estimators (trees) is set to 100. The model is then trained on the training data using the fit() method.
 
-##Model Evaluation
+## Model Evaluation
 The trained model is evaluated using the test data. Predictions are made on the test data using the predict() method, and the predicted values are printed. The R-squared error is calculated using the r2_score() function from the sklearn.metrics module, and the error score is printed.
 
 ##Visualization
